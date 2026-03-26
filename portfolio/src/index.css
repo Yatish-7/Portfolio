@@ -16,86 +16,6 @@ body {
   overflow-x: clip;
 }
 
-@keyframes devtools-backdrop-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes devtools-card-in {
-  from {
-    opacity: 0;
-    transform: translate3d(10px, -14px, 0) scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-}
-
-.devtools-notice {
-  animation: devtools-backdrop-in 0.45s var(--ease-smooth) both;
-}
-
-.devtools-notice-card {
-  animation: devtools-card-in 0.55s var(--ease-smooth) 0.06s both;
-  transition:
-    transform 0.35s var(--ease-smooth),
-    box-shadow 0.35s var(--ease-smooth),
-    border-color 0.35s var(--ease-smooth),
-    background-color 0.35s var(--ease-smooth);
-}
-
-.devtools-notice-card:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 12px 40px rgba(15, 23, 42, 0.45),
-    0 0 0 1px rgba(251, 191, 36, 0.25);
-  border-color: rgba(251, 191, 36, 0.55);
-}
-
-.devtools-banner-title {
-  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-}
-
-button.devtools-close-btn {
-  background-color: #fff;
-  color: #0a0a0a;
-  font-weight: 800;
-  border: none;
-  transition:
-    background-color 0.25s var(--ease-smooth),
-    transform 0.2s var(--ease-smooth),
-    box-shadow 0.3s var(--ease-out-soft);
-}
-
-button.devtools-close-btn:hover {
-  background-color: #f1f5f9;
-  border-color: transparent;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.18);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .devtools-notice,
-  .devtools-notice-card {
-    animation: none;
-  }
-
-  .devtools-notice-card:hover {
-    transform: none;
-  }
-
-  button.devtools-close-btn:hover {
-    transform: none;
-  }
-}
-
 :root {
   color: #0f172a;
   background-color: #f8fafc;
@@ -572,6 +492,27 @@ button:focus-visible {
   border-color: #cbd5e1;
 }
 
+.project-card-title {
+  transition:
+    color 0.35s var(--ease-out-soft),
+    transform 0.35s var(--ease-smooth);
+}
+
+.project-card-date {
+  transition:
+    color 0.35s var(--ease-out-soft),
+    transform 0.35s var(--ease-smooth);
+}
+
+.project-card:hover .project-card-title {
+  color: #020617;
+  transform: translateY(-1px);
+}
+
+.project-card:hover .project-card-date {
+  color: #475569;
+}
+
 .exp-logo-frame {
   transition:
     transform 0.45s var(--ease-smooth),
@@ -819,6 +760,21 @@ button:focus-visible {
   transform: translateX(5px);
 }
 
+.contact-row-icon {
+  transition:
+    transform 0.35s var(--ease-smooth),
+    box-shadow 0.35s var(--ease-out-soft),
+    border-color 0.35s var(--ease-out-soft),
+    background-color 0.35s var(--ease-out-soft);
+}
+
+.contact-row-light:hover .contact-row-icon {
+  transform: translateY(-1px) scale(1.04);
+  border-color: #cbd5e1;
+  background-color: #fff;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+}
+
 .experience-link {
   transition:
     color 0.3s var(--ease-out-soft),
@@ -860,6 +816,14 @@ button:focus-visible {
 .social-icon-light:active {
   transform: translateY(0) scale(0.94);
   box-shadow: 0 1px 4px rgba(15, 23, 42, 0.1);
+}
+
+.social-icon-light svg {
+  transition: transform 0.3s var(--ease-smooth);
+}
+
+.social-icon-light:hover svg {
+  transform: scale(1.08);
 }
 
 .contact-card-light {
@@ -1192,6 +1156,12 @@ button:focus-visible {
   }
 
   .surface-card:hover .exp-logo-frame {
+    transform: none;
+  }
+
+  .project-card:hover .project-card-title,
+  .contact-row-light:hover .contact-row-icon,
+  .social-icon-light:hover svg {
     transform: none;
   }
 

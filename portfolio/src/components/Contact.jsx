@@ -68,7 +68,7 @@ export default function Contact() {
                   href="mailto:mailtoyatish55@gmail.com"
                   className="contact-row-light no-underline rounded-xl px-3 -mx-3 py-2 hover:bg-slate-50 min-w-0"
                 >
-                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
+                  <span className="contact-row-icon inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
                     <FaEnvelope className="text-sm" />
                   </span>
                   <span className="min-w-0">Email me</span>
@@ -78,14 +78,14 @@ export default function Contact() {
                   href="tel:+916309757639"
                   className="contact-row-light no-underline rounded-xl px-3 -mx-3 py-2 hover:bg-slate-50 min-w-0"
                 >
-                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
+                  <span className="contact-row-icon inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
                     <FaPhoneAlt className="text-sm" />
                   </span>
                   <span className="min-w-0 tabular-nums">+91 6309757639</span>
                 </a>
 
                 <div className="contact-row-light px-3 -mx-3 min-w-0">
-                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
+                  <span className="contact-row-icon inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-200 text-slate-700">
                     <FaMapMarkerAlt className="text-sm" />
                   </span>
                   <span className="min-w-0">Hyderabad, India</span>

@@ -9,7 +9,6 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Reveal from "./components/Reveal";
-import DevToolsNotice from "./components/DevToolsNotice";
 import ScrollToSection from "./components/ScrollToSection";
 import { KNOWN_PATHS } from "./routes";
 
@@ -23,7 +22,6 @@ function AppLayout() {
   return (
     <div className="min-h-screen min-w-0 overflow-x-clip bg-slate-50 font-sans text-slate-800 antialiased">
       <ScrollToSection />
-      <DevToolsNotice />
       <Navbar />
       <main className="min-w-0">
         <Hero />

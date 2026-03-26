@@ -8,12 +8,12 @@ export default function Projects() {
         <SectionHeading label="Work" title="Projects" />
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 items-stretch">
-          <article className="surface-card p-6 sm:p-8 lg:p-10 flex flex-col h-full min-w-0">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 mb-2 text-balance">
+          <article className="surface-card project-card p-6 sm:p-8 lg:p-10 flex flex-col h-full min-w-0">
+            <h3 className="project-card-title text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 mb-2 text-balance">
               Academic Website Security Audit
             </h3>
 
-            <p className="text-slate-500 text-sm mb-5">Jan 2024 – Mar 2024</p>
+            <p className="project-card-date text-slate-500 text-sm mb-5">Jan 2024 – Mar 2024</p>
 
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="tag">WebDevTools</span>
@@ -39,12 +39,12 @@ export default function Projects() {
             </a>
           </article>
 
-          <article className="surface-card p-6 sm:p-8 lg:p-10 flex flex-col h-full min-w-0">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 mb-2 text-balance">
+          <article className="surface-card project-card p-6 sm:p-8 lg:p-10 flex flex-col h-full min-w-0">
+            <h3 className="project-card-title text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 mb-2 text-balance">
               Real-Time Data Synchronization
             </h3>
 
-            <p className="text-slate-500 text-sm mb-5">May 2025 – July 2025</p>
+            <p className="project-card-date text-slate-500 text-sm mb-5">May 2025 – July 2025</p>
 
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="tag">Java</span>
@@ -71,12 +71,12 @@ export default function Projects() {
             </a>
           </article>
 
-          <article className="surface-card p-6 sm:p-8 lg:p-10 flex flex-col h-full min-w-0">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 mb-2 text-balance">
+          <article className="surface-card project-card p-6 sm:p-8 lg:p-10 flex flex-col h-full min-w-0">
+            <h3 className="project-card-title text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 mb-2 text-balance">
               INOSKL-24
             </h3>
 
-            <p className="text-slate-500 text-sm mb-5">
+            <p className="project-card-date text-slate-500 text-sm mb-5">
               Python security toolkit · KLCYBERSAC · 2024
             </p>
 
